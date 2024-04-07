@@ -11,7 +11,8 @@
     "====": "FOR PRODUCTION ================================",
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "publish": "env-cmd -f .env electron-forge publish"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "@electron-forge/maker-zip": "^7.3.1",
     "@electron-forge/plugin-auto-unpack-natives": "^7.3.1",
     "@electron-forge/plugin-fuses": "^7.3.1",
+    "@electron-forge/publisher-github": "^7.3.1",
     "@types/electron": "^1.6.10",
     "@types/node": "^20.12.5",
     "electron": "^29.2.0",
@@ -35,6 +37,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "env-cmd": "^10.1.0"
   }
 }
